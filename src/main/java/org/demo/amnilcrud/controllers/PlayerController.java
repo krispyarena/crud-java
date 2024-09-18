@@ -16,7 +16,7 @@ public class PlayerController {
     @Autowired
     private PlayerService playerService;
 
-    @GetMapping("/players")
+    @GetMapping({"/","/players"})
     public String getPlayer(Model model){
 
         return "PlayerForm";

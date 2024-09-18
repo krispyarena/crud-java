@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>employee form</title>
+</head>
+<body>
+
+<th:block th:insert="Header.html"></th:block>
+
+<div class="container-fluid">
+    <div class = "card-header text-center bg-info p-2">
+        <h4>Player Registration Form</h4>
+    </div>
+    <div class = "card-body"><br>
+
+        <form action="/players" method="post">
+
+            <div class = "row p-2">
+                <div class = "col-4">Name</div>
+                <div class = "col-6">
+                    <input type = "text" name = "name" class = "form-control">
+                </div>
+            </div>
+
+
+
+
+            <div class = "row p-2">
+                <div class = "col-4">Country</div>
+                <div class = "col-6">
+                    <input type = "text" name = "country" class = "form-control">
+                </div>
+            </div>
+
+
+            <div class = "row p-2">
+                <div class = "col-4">Goals</div>
+                <div class = "col-6">
+                    <input type = "number" name = "goals" class = "form-control">
+                </div>
+            </div>
+
+            <div class = "row p-2">
+                <div class = "col-4"></div>
+                <div class = "col-6">
+                    <input type = "submit" value = "Add" class = "btn btn-success btn-lg">
+                </div>
+            </div>
+        </form>
+
+
+    </div><br>
+    <div class = "card-footer text-center bg-warning p-1">
+        <h6>©copyright2024@PlayersProfile</h6>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
